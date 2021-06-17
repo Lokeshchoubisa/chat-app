@@ -8,7 +8,7 @@ const io = require("socket.io")(httpServer,{
     },
 });
 
-const PORT=7000
+// const PORT=
 const users={}
 
 
@@ -51,7 +51,7 @@ io.on("connection", socket => {
 
 });
 
-httpServer.listen(PORT,()=>
+httpServer.listen(3000,()=>
 {
-    console.log(`sever at ${PORT}`);
+    console.log("server started success on 3000");
 });
