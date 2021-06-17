@@ -51,7 +51,7 @@ io.on("connection", socket => {
 
 });
 
-httpServer.listen(3000,()=>
+httpServer.listen(process.env.PORT || 3000,()=>
 {
-    console.log("server started success on 3000");
+    console.log("server started success");
 });
